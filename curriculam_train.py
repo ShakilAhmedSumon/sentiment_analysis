@@ -47,9 +47,9 @@ def curriculam_training(min_len, max_len):
 	init = random_normal(stddev=0.046875)
 
 	input_data = Input(name='the_input', shape=input_shape, dtype='float32')
-	q = TimeDistributed(Dense(fc_size, name='fc1', kernel_initializer=init, bias_initializer=init, activation='relu'))(input_data)
-	q = TimeDistributed(Dense(fc_size, name='fc2', kernel_initializer=init, bias_initializer=init, activation='relu'))(q)
-	q = TimeDistributed(Dense(fc_size, name='fc3', kernel_initializer=init, bias_initializer=init, activation='relu'))(q)
+	#q = TimeDistributed(Dense(fc_size, name='fc1', kernel_initializer=init, bias_initializer=init, activation='relu'))(input_data)
+	#q = TimeDistributed(Dense(fc_size, name='fc2', kernel_initializer=init, bias_initializer=init, activation='relu'))(q)
+	#q = TimeDistributed(Dense(fc_size, name='fc3', kernel_initializer=init, bias_initializer=init, activation='relu'))(q)
 	q = Bidirectional(LSTM(rnn_size, return_sequences=True, activation='relu',
                                 kernel_initializer='he_normal', name='birnn'), merge_mode='sum')(q)
 	q=Flatten()(q)

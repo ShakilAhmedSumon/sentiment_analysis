@@ -10,7 +10,7 @@ DATA_PATH = "sentiment_analysis.xlsx"
 def read_file(DATA_PATH):
 	'''
 	reads the file provided:
-	DATA_PATH: The path of the file.
+	DATA_PATH  : The path of the file.
 
 	Returns:
 	y          : The target vector of the dataset.
