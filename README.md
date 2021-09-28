@@ -2,7 +2,7 @@
 
 Bangla Sentiment Analysis Using Long Short Term Memory Network with Attention Mechanism.
 
-Understanding the sentiment of facebook comments.
+Understanding political partiality of facebook comments.
 
 Three types of Sentiment:
 
